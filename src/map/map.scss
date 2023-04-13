@@ -1,0 +1,20 @@
+.map__country {
+    fill: #C1C2C5;
+    stroke: #141517;
+    stroke-width: 0.5;
+    cursor: pointer;
+
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+        fill: #63e6be;
+    }
+
+    &.active {
+        fill: #63e6be;
+    }
+}
+
+.relative {
+    position: relative;
+}

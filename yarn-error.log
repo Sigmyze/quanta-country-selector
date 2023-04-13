@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\lanje\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add parcel-bundler --dev
+
+PATH: 
+  C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\VulkanSDK\1.2.162.1\Bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\libnvvp;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.3.1\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\CMake\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Users\lanje\.cargo\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\lanje\AppData\Local\Microsoft\WindowsApps;C:\Users\lanje\AppData\Local\Programs\Microsoft VS Code\bin;C:\tools\neovim\Neovim\bin;C:\Users\lanje\.dotnet\tools;C:\Users\lanje\AppData\Local\Programs\VSCodium\bin;C:\Users\lanje\AppData\Local\Programs\Hyper\resources\bin;C:\Users\lanje\AppData\Roaming\npm;C:\Users\lanje\AppData\Local\atom\bin;C:\Users\lanje\AppData\Local\JetBrains\Toolbox\scripts;
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\lanje\OneDrive\Documents\code\SigmyzeContainer\quanta-country-selector\package.json: Unexpected token } in JSON at position 353
+      at JSON.parse (<anonymous>)
+      at C:\Users\lanje\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\lanje\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\lanje\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+  	"name": "quanta-country-selector",
+  	"version": "1.0.0",
+  	"main": "index.js",
+  	"license": "MIT",
+  	"devDependencies": {
+  		"@types/react": "^18.0.34",
+  		"@types/react-dom": "^18.0.11",
+  		"parcel": "^2.8.3",
+  		"react": "^18.2.0",
+  		"react-dom": "^18.2.0",
+  		"typescript": "^5.0.4"
+  	},
+  	"scripts": {
+  		"dev": "parcel watch",
+  		"build": "parcel build"
+  	},
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
