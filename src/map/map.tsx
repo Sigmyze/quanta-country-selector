@@ -33,7 +33,7 @@ const initalTransform = {
 }
 
 const MapContainer: React.FC = ({ }) => {
-    const [dims, setDims] = useState({ x: 900, y: 650 })
+    const [dims, setDims] = useState({ x: 1093, y: 650 })
     const [activeId, setActiveId] = useState("")
 
     const pingMessage = usePingMessage()
@@ -41,7 +41,7 @@ const MapContainer: React.FC = ({ }) => {
 
     useEffect(() => {
         //this is required for communicating with sandbox
-        pingMessage("country_selector_quanta")
+        pingMessage("app")
 
         let schema = [
             {
