@@ -7,7 +7,8 @@ import { Zoom, applyMatrixToPoint } from "@visx/zoom"
 import { RectClipPath } from '@visx/clip-path'
 import { TransformMatrix } from "@visx/zoom/lib/types";
 import MapCountry from "./map-country";
-import { ISchemaItem, usePingMessage, useSetSchema } from "quanta-selector-react";
+import { ISchemaItem, usePingMessage, useSetSchema, useSetSelected } from "quanta-selector-react";
+import { buildOutputObject } from "./utils";
 
 const background = "#101113"
 
@@ -38,6 +39,7 @@ const MapContainer: React.FC = ({ }) => {
 
     const pingMessage = usePingMessage()
     const setSchema = useSetSchema()
+    const setSelected = useSetSelected()
 
     useEffect(() => {
         //this is required for communicating with sandbox
@@ -62,6 +64,10 @@ const MapContainer: React.FC = ({ }) => {
             }
         ] as ISchemaItem[]
         setSchema("country_selector_quanta_schema", schema) // required to validate that the code works
+
+        //build a default value
+        let defaultOutput = buildOutputObject("USA")
+        setSelected("country_selector_quanta", defaultOutput)
     }, [])
 
     //mercator constants
