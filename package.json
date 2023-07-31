@@ -3,7 +3,10 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"scripts": {
-		"dev": "parcel src/index.html --open"
+		"start": "react-app-rewired start",
+		"build": "react-app-rewired build",
+		"test": "react-app-rewired test",
+		"eject": "react-app-rewired eject"
 	},
 	"dependencies": {
 		"@babel/core": "^7.21.4",
@@ -27,10 +30,29 @@
 		"sass": "^1.62.0",
 		"terser": "5.5.1",
 		"topojson-client": "^3.1.0",
-		"typescript": "^5.0.4"
+		"typescript": "^5.0.4",
+		"react-remove-scroll": "^2.5.5",
+		"react-scripts": "5.0.1",
+		"ts-loader": "^9.4.3"
 	},
 	"devDependencies": {
 		"@parcel/transformer-sass": "2.8.3",
-		"process": "^0.11.10"
-	}
+		"process": "^0.11.10",
+		"html-inline-css-webpack-plugin": "^1.11.1",
+		"html-inline-script-webpack-plugin": "^3.2.0",
+		"html-webpack-plugin": "^5.5.1",
+		"react-app-rewired": "^2.2.1"
+	},
+	"browserslist": {
+		"production": [
+		  ">0.2%",
+		  "not dead",
+		  "not op_mini all"
+		],
+		"development": [
+		  "last 1 chrome version",
+		  "last 1 firefox version",
+		  "last 1 safari version"
+		]
+	  }
 }

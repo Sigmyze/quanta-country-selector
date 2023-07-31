@@ -43,7 +43,7 @@ const MapContainer: React.FC = ({ }) => {
 
     useEffect(() => {
         //this is required for communicating with sandbox
-        pingMessage("app")
+        pingMessage("root")
 
         let schema = [
             {
