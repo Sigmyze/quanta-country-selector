@@ -14,4 +14,4 @@ const App: React.FC = ({ }) => {
 }
 
 //MANDATORY in order for the selector to work
-render(<App />, document.getElementById("app"))
+render(<App />, document.getElementById("root"))
