@@ -7,7 +7,7 @@ import { Zoom, applyMatrixToPoint } from "@visx/zoom"
 import { RectClipPath } from '@visx/clip-path'
 import { TransformMatrix } from "@visx/zoom/lib/types";
 import MapCountry from "./map-country";
-import { ISchemaItem, usePingMessage, useSetSchema, useSetSelected } from "quanta-selector-react";
+import { ISchemaItem, usePingMessage, useSetSchema, useSetSelected } from "quanta-selector-framework";
 import { buildOutputObject } from "./utils";
 
 const background = "#101113"
@@ -19,7 +19,7 @@ interface IFeatureShape {
     properties: { name: string }
 }
 
-const world = topojson.feature(world_topo, world_topo.objects.units) as {
+const world = topojson.feature(world_topo as any, world_topo.objects.units as any) as unknown as {
     type: 'FeatureCollection';
     features: IFeatureShape[]
 }

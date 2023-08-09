@@ -1,4 +1,4 @@
-import { SelectorWrapper } from "quanta-selector-react"
+import { SelectorWrapper } from "quanta-selector-framework"
 import React from "react"
 import { render } from "react-dom"
 import MapContainer from "./map/map"

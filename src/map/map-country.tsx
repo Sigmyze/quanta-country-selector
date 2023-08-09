@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { IFeatureShape } from './map'
 import { buildOutputObject } from './utils'
-import { useSetSelected } from 'quanta-selector-react'
+import { useSetSelected } from "quanta-selector-framework"
 
 interface IMapCountryProps {
     path: string | null,

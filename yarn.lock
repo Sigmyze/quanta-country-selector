@@ -4043,6 +4043,21 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
+"@types/topojson-client@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@types/topojson-client/-/topojson-client-3.1.1.tgz#d1396b2e79f530ef69bb162523cddf94576bd5a9"
+  integrity sha512-E4/Z2Xg56kVLRzYWem/6uOKVcVNqqxEqlWM9qCG2tCV1BxuzvvXC02/ELoGJWgtKkQhfycBPlMFEuTFdA/YiTg==
+  dependencies:
+    "@types/geojson" "*"
+    "@types/topojson-specification" "*"
+
+"@types/topojson-specification@*":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@types/topojson-specification/-/topojson-specification-1.0.2.tgz#e20df2c5a611e31f51d606473dbaccc1d90461c8"
+  integrity sha512-SGc1NdX9g3UGDp6S+p+uyG+Z8CehS51sUJ9bejA25Xgn2kkAguILk6J9nxXK+0M/mbTBN7ypMA7+4HVLNMJ8ag==
+  dependencies:
+    "@types/geojson" "*"
+
 "@types/trusted-types@^2.0.2":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.3.tgz#a136f83b0758698df454e328759dbd3d44555311"
@@ -10139,10 +10154,10 @@ qs@6.11.0:
   dependencies:
     side-channel "^1.0.4"
 
-quanta-selector-react@^1.1.0:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/quanta-selector-react/-/quanta-selector-react-1.2.2.tgz#dd4b5f4d72e5d95fdbdbfa2110cb3ef5738874d1"
-  integrity sha512-yI3jsM9b8fOpyhmwZJ40WZgkwnGvf9N0E0v/kFPyQSZJM1kRgmqkAcnwbiTkYoHJ9KOScBoHYvhtnAC+eI3WjQ==
+quanta-selector-framework@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/quanta-selector-framework/-/quanta-selector-framework-1.3.2.tgz#b3e412ddde21968b7a6bb2d2d4f83bea11925001"
+  integrity sha512-jqwez2+qKUyErgbjDN8odOGaHDPY4R0aePQ6+rSbnfThmHXsRDqEk5jr6zdCm00PyTfC9w/oOD1jydG/cEgzxw==
   dependencies:
     "@types/uuid" "^9.0.1"
     uuid "^9.0.0"
