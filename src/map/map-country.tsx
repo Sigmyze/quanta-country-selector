@@ -36,6 +36,7 @@ const MapCountry: React.FC<IMapCountryProps> = ({ path, feature, activeId, setAc
             d={path || ''}
             className={`map__country ${feature.id === activeId && 'active'}`}
             onClick={countryClick}
+            id={`country-${feature.id}`}
         />
     )
 }
