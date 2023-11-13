@@ -3,6 +3,8 @@ import * as countries from 'i18n-iso-countries'
 function buildOutputObject(iso3: string) {
     let iso2 = countries.alpha3ToAlpha2(iso3)
     let numeric = countries.alpha3ToNumeric(iso3)
+    if(iso2 === undefined)
+        return
 
     let name_container = new Intl.DisplayNames(['en'], {type: 'region'})
     let name = name_container.of(iso2)

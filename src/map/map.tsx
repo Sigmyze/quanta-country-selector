@@ -67,6 +67,9 @@ const MapContainer: React.FC = ({ }) => {
 
         //build a default value
         let defaultOutput = buildOutputObject("USA")
+        if(defaultOutput === undefined)
+            return
+
         setSelected("country_selector_quanta", defaultOutput)
     }, [])
 
